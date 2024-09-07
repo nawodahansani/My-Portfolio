@@ -1,0 +1,61 @@
+/*------------Header Section----------------*/
+header{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background: black;
+    top: 0;
+    z-index: 1;
+}
+header>div>h3{     /* Nawo-icon */
+    color: white;
+    font-family: "Lemon", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    height: fit-content;
+    line-height: 52px;
+
+    position: absolute;
+    top: 0;
+    margin: 0px;
+    padding-left: 20px;
+}
+header>nav{       /* Navigation */
+    height: fit-content;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header>nav>ul{
+    list-style: none;
+}
+header>nav>ul>li{
+    display: inline;
+    margin: 0px 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+header>nav>ul>li>a{
+    text-decoration: none; /* Removes the default underline */
+    color: inherit; /* Inherits the color from the parent li */
+    font-weight: normal; /* Set font-weight to normal if needed */
+}
+
+/*------------Hero Section----------------*/
+main{
+    position: relative;
+    top: 100px;
+}
+main>
+
+
+
+
