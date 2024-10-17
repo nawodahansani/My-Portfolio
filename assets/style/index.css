@@ -555,8 +555,9 @@ main{
     grid-template-columns: repeat(2,1fr);
 }
 #main5>h3{
+    /*Get In Touch With Me*/
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 100px;
 
     font-family: "Rhodium Libre", serif;
