@@ -579,6 +579,7 @@ main{
     display: flex;
     align-items: center;
     left: 100px;
+    column-gap: 20px;
 }
 #main5>section:nth-child(2)>div:first-child{
     position: absolute;
@@ -700,5 +701,9 @@ footer>small{
     color: white;
     display: flex;
     justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
+
 }
