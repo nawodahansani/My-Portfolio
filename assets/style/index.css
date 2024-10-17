@@ -540,6 +540,7 @@ main{
 #main4>section>div>img:hover{
     cursor: pointer;
 }*/
+
 /*------------Contact Section-------------*/
 #main5{
     display: grid;
@@ -562,23 +563,23 @@ main{
 #main5>section:nth-child(2)>div>div>h4{
     font-size: 20px;
 }
-/*#main5>section:nth-child(2)>div{
+#main5>section:nth-child(2)>div{
     display: flex;
     align-items: center;
     left: 100px;
-}*/
-/*#main5>section:nth-child(2)>div:first-child{
+}
+#main5>section:nth-child(2)>div:first-child{
     position: absolute;
     top: 120px;
-}*/
-/*#main5>section:nth-child(2)>div:nth-child(2){
+}
+#main5>section:nth-child(2)>div:nth-child(2){
     position: absolute;
     top: 220px;
-}*/
-/*#main5>section:nth-child(2)>div:nth-child(3){
+}
+#main5>section:nth-child(2)>div:nth-child(3){
     position: absolute;
     top: 320px;
-}*/
+}
 /*#main5>section:nth-child(2)>div>img{
     width: 45px;
     height: 45px;
