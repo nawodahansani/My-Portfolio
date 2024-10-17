@@ -428,7 +428,7 @@ main{
 /* Add hover effect to icons */
 #main3 section img:hover {
     transform: scale(1.1);
-    box-shadow: 0px 4px 20px #00C2FF;
+    box-shadow: 0 4px 20px #00C2FF;
 }
 
 .circle4{
@@ -461,8 +461,8 @@ main{
     z-index: -1;
 }
 
-/*------------Project Section----------------*//*
-#main4{
+/*------------Project Section----------------*/
+/*#main4{
     display: flex;
     justify-content: center; !* Center horizontally *!
     align-items: center; !* Center vertically *!
@@ -605,9 +605,11 @@ main{
     justify-content: end;
     font-size: 20px;
 }
-/*#main5>section:nth-child(3)>div:nth-child(2)>address {
+
+/*#main5>section:nth-child(3)>div:nth-child(2)>address{
     line-height: 1.8;
 }*/
+
 #main5>section:nth-child(3)>div>img{
     width: 45px;
     height: 45px;
