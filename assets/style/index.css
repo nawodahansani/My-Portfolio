@@ -584,14 +584,11 @@ main{
     width: 45px;
     height: 45px;
 }
-
 #main5>section:nth-child(3)>div:first-child{
     position: absolute;
     top: 120px;
     right: 100px;
 }
-
-
 #main5>section:nth-child(3)>div:first-child>h4{
     display: flex;
     justify-content: end;
@@ -607,9 +604,8 @@ main{
     display: flex;
     justify-content: end;
     font-size: 20px;
-
 }
-/*#main5>section:nth-child(3)>div:nth-child(2)>address{
+/*#main5>section:nth-child(3)>div:nth-child(2)>address {
     line-height: 1.8;
 }*/
 #main5>section:nth-child(3)>div>img{
@@ -639,11 +635,11 @@ main{
     border-radius: 15%;
     transform: scale(1.1);
 }
-/*#main5>section:nth-child(3)>div:first-child>img{
+#main5>section:nth-child(3)>div:first-child>img{
     position: relative;
     left: 50px;
     top: 30px;
-}*/
+}
 /*#main5>section:nth-child(2)>div>div>a{
     text-decoration: none; !* Removes the default underline *!
     color: inherit; !* Inherits the color from the parent li *!
