@@ -139,10 +139,10 @@ main{
     margin-top: 0px;
     margin-bottom: 0px;
 
-   /* background: linear-gradient(90deg, #00C2FF, #FF29C3);
+    background: linear-gradient(90deg, #00C2FF, #FF29C3);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 7px transparent;*/
+    -webkit-text-stroke: 7px transparent;
 }
 /*#main1>section:nth-child(2)>div:first-child>div:nth-child(2){
     display: grid;
