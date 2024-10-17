@@ -273,7 +273,7 @@ main{
     transform: rotate(90deg);
     z-index: -1;
 }
-/*.line1{
+.line1{
     position: absolute;
     width: 300px;
     height: 4px;
@@ -282,8 +282,8 @@ main{
     background:linear-gradient(270deg,#FF29C3,#00C2FF);
     transform: rotate(180deg);
 
-}*/
-/*.line2{
+}
+.line2{
     position: absolute;
     width: 400px;
     height: 4px;
@@ -293,8 +293,8 @@ main{
     margin: auto;
     background: linear-gradient(270deg,#FF29C3,#00C2FF);
     transform: rotate(90deg);
-}*/
-/*.line3{
+}
+.line3{
     position: absolute;
     width: 300px;
     height: 4px;
@@ -302,8 +302,8 @@ main{
     top: 190px;
     background: linear-gradient(90deg,#FF29C3,#00C2FF);
     transform: rotate(180deg);
-}*/
-/*.line4{
+}
+.line4{
     position: absolute;
     width: 350px;
     height: 4px;
@@ -311,7 +311,7 @@ main{
     bottom: 195px;
     background: linear-gradient(270deg,#FF29C3,#00C2FF);
     transform: rotate(180deg);
-}*/
+}
 
     /*Titles*/
 #main2>section>h3{
