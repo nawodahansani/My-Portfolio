@@ -8,6 +8,7 @@ header{
     z-index: 1;
 }
 /* NH-icon */
+
 /*header>div>h3{
     color: white;
     font-family: "Lemon", serif;
@@ -58,7 +59,7 @@ header>nav>ul>li>a{
     font-weight: normal; /* Set font-weight to normal if needed */
 }
 
-/*------------Hero Section----------------*/
+/*------------All Main Sections----------------*/
 main{
     position: relative;
     box-sizing: border-box;
@@ -77,6 +78,15 @@ main{
     border-radius: 24px;
 
 }
+/*------------Hero Section----------------*/
+#main1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+    /*Add colors*/
 .circle1{
     /* Eclipse */
     position: absolute;
@@ -92,14 +102,9 @@ main{
     filter: blur(100px);
     transform: rotate(-17.38deg);
     z-index: -1;
+}
 
-}
-#main1{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
+    /*Add grid to hero section*/
 #main1>section:nth-child(2){
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -110,6 +115,7 @@ main{
     position: relative;
     left: 50px;
 }
+    /*Font designs*/
 #main1>section:nth-child(2)>div:first-child>div:first-child{
     color: white;
     font-family: "Poppins", sans-serif;
@@ -117,19 +123,23 @@ main{
     font-style: normal;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child{
+    /*Hi*/
     font-size: 32px;
     margin-bottom: 24px;
     margin-top: 0px;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child>span{
+    /*my name is*/
     font-size: 20px;
     font-weight: normal;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:nth-child(3){
+    /*A student in software engineering*/
     font-size: 24px;
     font-weight: 500;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h1{
+    /*Nawoda Hansani*/
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
@@ -145,11 +155,13 @@ main{
     -webkit-text-stroke: 7px transparent;
 }
 #main1>section:nth-child(2)>div:first-child>div:nth-child(2){
+    /*Social icons*/
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 400px;
     margin-top: 40px;
 }
+    /*Add transition*/
 #main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img{
     width: 45px;
     transition: transform 0.3s ease;
