@@ -383,14 +383,14 @@ main{
 }
 
 /*------------Skill Section----------------*/
-/*#main3 {
+#main3 {
     display: flex;
-    justify-content: center; !* Center horizontally *!
-    align-items: center; !* Center vertically *!
-    flex-direction: column; !* To ensure the heading and section are stacked vertically *!
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* To ensure the heading and section are stacked vertically */
     padding: 20px;
     text-align: center;
-}*/
+}
 
 #main3>h3{
     /* Skills */
