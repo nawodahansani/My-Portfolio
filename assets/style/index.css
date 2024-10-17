@@ -417,13 +417,13 @@ main{
 }
 
 /* Style for the images */
-/*#main3 section img {
+#main3 section img {
     width: 90px;
     height: auto;
     background-color: white;
     border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}*/
+    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+}
 
 /* Add hover effect to icons */
 /*#main3 section img:hover {
