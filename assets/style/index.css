@@ -7,7 +7,7 @@ header{
     top: 0;
     z-index: 1;
 }
-/* Nawo-icon */
+/* NH-icon */
 /*header>div>h3{
     color: white;
     font-family: "Lemon", serif;
@@ -22,25 +22,26 @@ header{
     margin: 0px;
     padding-left: 20px;
 }*/
-/*header>div>img{
+
+header>div>img{
     width: 70px;
     height: 50px;
     position: absolute;
     left: 20px;
-}*/
+}
 /* Navigation */
-/*header>nav{
+header>nav{
     height: fit-content;
     position: absolute;
     right: 15px;
     top: 0;
     bottom: 0;
     margin: auto;
-}*/
-/*header>nav>ul{
+}
+header>nav>ul{
     list-style: none;
-}*/
-/*header>nav>ul>li{
+}
+header>nav>ul>li{
     display: inline;
     margin: 0px 30px;
 
@@ -50,12 +51,12 @@ header{
     font-size: 18px;
     line-height: 30px;
     color: white;
-}*/
-/*header>nav>ul>li>a{
-    text-decoration: none; !* Removes the default underline *!
-    color: inherit; !* Inherits the color from the parent li *!
-    font-weight: normal; !* Set font-weight to normal if needed *!
-}*/
+}
+header>nav>ul>li>a{
+    text-decoration: none; /* Removes the default underline */
+    color: inherit; /* Inherits the color from the parent li */
+    font-weight: normal; /* Set font-weight to normal if needed */
+}
 
 /*------------Hero Section----------------*/
 /*main{
