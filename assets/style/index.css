@@ -392,8 +392,8 @@ main{
     text-align: center;
 }*/
 
-/*#main3>h3{
-    !* Skills *!
+#main3>h3{
+    /* Skills */
     position: absolute;
     top: 15px;
 
@@ -402,7 +402,7 @@ main{
     font-style: normal;
     font-size: 32px;
     color: #B6B3B3;
-}*/
+}
 
 /* Grid layout for skill icons */
 /*#main3 section {
