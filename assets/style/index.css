@@ -615,13 +615,13 @@ main{
     width: 45px;
     height: 45px;
 }
-/*#main5>section:nth-child(3)>div:nth-child(2)>div{
+#main5>section:nth-child(3)>div:nth-child(2)>div{
     position: absolute;
     right: 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 20px;
-}*/
+}
 /*#main5>section:nth-child(3)>div:nth-child(2)>div>img{
     width: 45px;
     height: 45px;
