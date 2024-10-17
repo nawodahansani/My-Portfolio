@@ -420,16 +420,16 @@ main{
 #main3 section img {
     width: 90px;
     height: auto;
-    background-color: white;
+    /*background-color: white;*/
     border-radius: 15px;
-    /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Add hover effect to icons */
-/*#main3 section img:hover {
+#main3 section img:hover {
     transform: scale(1.1);
     box-shadow: 0px 4px 20px #00C2FF;
-}*/
+}
 
 .circle4{
     position: absolute;
