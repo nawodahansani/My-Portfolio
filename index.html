@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Nawo</title>
 
-    <link rel="stylesheet" href="../assets/style/index.css">
-    <link rel="stylesheet" href="../assets/style/normalize.css">
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="stylesheet" href="assets/style/normalize.css">
 
         <!--Lemon font-style-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,10 +29,16 @@
 <!--Header Section-->
 <header>
     <div>
-        <h3>Nawo</h3>
+        <img data-aos="fade-down"
+             data-aos-easing="linear"
+             data-aos-duration="1000"
+             src="assets/images/logo.png" alt="logo">
     </div>
     <nav>
-        <ul>
+        <ul data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+
             <li><a href="">Home</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Skills</a></li>
@@ -46,33 +52,48 @@
 <main id="main1">
     <div class="circle1"></div>
     <section>
-        <h3>Hi  <span>my name is</span></h3>
+        <div data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+            <div>
+                <h3>Hi <span>my name is</span></h3>
 
-        <h1 >Nawoda Hansani .</h1>
-        <h3 >A student in software engineering .</h3>
-    </section>
-    <div class="mypic">
-        <img src="../assets/images/img.png" title="mypic" alt="profile_image" width="300">
-    </div>
-    <section>
-        <img src="../assets/icons/facebook.png" title="facebook" alt="facebook" >
-        <img src="../assets/icons/instagram.png" title="instagram" alt="instagram">
-        <img src="../assets/icons/github.png" title="github" alt="github">
-        <img src="../assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+                <h1 >Nawoda Hansani .</h1>
+                <h3 >A student in software engineering .</h3>
+            </div>
+
+            <div>
+                <img data-aos="fade-right" data-aos-duration="1000" src="assets/icons/facebook.png" title="facebook" alt="facebook" >
+                <img data-aos="fade-right" data-aos-duration="1000" src="assets/icons/instagram.png" title="instagram" alt="instagram">
+                <img data-aos="fade-right" data-aos-duration="1000" src="assets/icons/github.png" title="github" alt="github">
+                <img data-aos="fade-right" data-aos-duration="1000" src="assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+            </div>
+        </div>
+        <div class="mypic"
+             data-aos="fade-left"
+             data-aos-anchor="#example-anchor"
+             data-aos-offset="500"
+             data-aos-duration="1000">
+            <img src="assets/images/img.png"  alt="profile_image" width="300px" height="300px">
+        </div>
     </section>
 </main>
 
 <!--About Section-->
 <main id="main2">
     <section>
-        <h3>About me</h3>
-        <div>
+        <h3 data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">About me</h3>
+        <div data-aos="fade-up" >
             <h5>My name is Nawoda Hansani<br>Full-Stack Developer<br>I'm 22 years old</h5>
         </div>
     </section>
     <section>
-        <h3>Education</h3>
-        <div>
+        <h3 data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" >Education</h3>
+        <div data-aos="fade-up" >
             <h5>Taxila Central College</h5>
             <h5>O/L - 2018<br>A/L - 2022</h5>
             <h5>Institute Of Software Engineering</h5>
@@ -80,8 +101,10 @@
         </div>
     </section>
     <section>
-        <h3>Service</h3>
-        <div>
+        <h3 data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine" >Service</h3>
+        <div data-aos="fade-up" >
             <h5>Web Design<br>UI/UX Design<br>Stand-alone Applications</h5>
         </div>
     </section>
@@ -94,74 +117,95 @@
 
 <!--Skills Section-->
 <main id="main3">
-    <h3>Skills</h3>
-    <section>
-        <img src="../assets/images/java.png" title="java" alt="java" width="90">
-        <img src="../assets/images/mysql.png" title="mysql" alt="mysql" width="90" >
-        <img src="../assets/images/figma.png" title="figma" alt="figma" width="90">
-        <img src="../assets/images/html.png" title="html" alt="html" width="90">
-        <img src="../assets/images/css.png" title="css" alt="css" width="90">
-        <img src="../assets/images/javascript.png" title="javascript" alt="javascript" width="90">
+    <h3 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" >Skills</h3>
+    <section data-aos="fade-up"
+             data-aos-easing="linear"
+             data-aos-duration="1500" >
+
+        <img src="assets/images/java.png" title="java" alt="java" width="90">
+        <img src="assets/images/mysql.png" title="mysql" alt="mysql" width="90" >
+        <img src="assets/images/figma.png" title="figma" alt="figma" width="90">
+        <img src="assets/images/html.png" title="html" alt="html" width="90">
+        <img src="assets/images/css.png" title="css" alt="css" width="90">
+        <img src="assets/images/javascript.png" title="javascript" alt="javascript" width="90">
     </section>
+    <div class="circle4"></div>
+    <div class="circle5"></div>
 </main>
 
 <!--Project Section-->
 <main id="main4">
-    <h3>Project</h3>
+    <h3 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" >Project</h3>
     <section>
         <div>
             <h4>Connect4 Game</h4>
             <p>It is a simple game in which<br>the players choose a colour <br>and then take turns <br>dropping coloured tokens <br>into a five-row,six-column <br>vertically suspended grid  .</p>
-            <img src="../assets/icons/github.png" title="github" alt="github">
+            <img src="assets/icons/github.png" title="github" alt="github">
         </div>
         <div>
             <h4>Fishmarketing System</h4>
             <p>An item ordering system for <br>a small fish farming and <br>marketing business.</p>
-            <img src="../assets/icons/github.png" title="github" alt="github">
+            <img src="assets/icons/github.png" title="github" alt="github">
         </div>
         <div>
             <h4>Portfolio Design</h4>
             <p>Find out how to build a<br>personal website .</p>
-            <img src="../assets/icons/github.png" title="github" alt="github">
+            <img src="assets/icons/github.png" title="github" alt="github">
         </div>
     </section>
     <div class="circle3"></div>
 </main>
 
 <!--Contact Section-->
-<main>
-    <h3>Say Hello !</h3>
-    <section>
+<main id="main5">
+    <h3 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" >Say Hello !</h3>
+    <section data-aos="fade-right" data-aos-duration="1000"  >
         <div>
-            <img src="../assets/icons/email.png" title="email" alt="email">
-            <h4>Email</h4>
-            <a href="mailto:nawodahansani13@gmail.com">nawodahansani13@gmail.com</a>
+            <img src="assets/icons/email.png" title="email" alt="email">
+            <div>
+                <h4>Email</h4>
+                <a href="mailto:nawodahansani13@gmail.com">nawodahansani13@gmail.com</a>
+            </div>
         </div>
         <div>
-            <img src="../assets/icons/whatsapp.png" title="whatsapp" alt="whatsapp">
-            <h4>Whatsapp</h4>
-            <a href="https://wa.me/qr/UCIZUVPH7JC7O1">076 973 6663</a>
+            <img src="assets/icons/whatsapp.png" title="whatsapp" alt="whatsapp">
+            <div>
+                <h4>Whatsapp</h4>
+                <a href="https://wa.me/qr/UCIZUVPH7JC7O1">076 973 6663</a>
+            </div>
         </div>
         <div>
-            <img src="../assets/icons/phone-message.png" title="call" alt="call">
-            <h4>Contact No</h4>
-            <a href="tel:0769736663">076 973 6663</a>
+            <img src="assets/icons/phone-message.png" title="call" alt="call">
+            <div>
+                <h4>Contact No</h4>
+                <a href="tel:0769736663">076 973 6663</a>
+            </div>
         </div>
     </section>
-    <section>
+    <section data-aos="fade-left" data-aos-duration="1000" >
         <div>
-            <img src="../assets/icons/address.png" title="address" alt="address">
+            <img src="assets/icons/address.png" title="address" alt="address">
             <h4>Address</h4>
             <address>Bandaragama,<br>Kaluthara,<br>Sri Lanka</address>
         </div>
         <div>
             <h4>Social</h4>
-            <img src="../assets/icons/facebook.png" title="facebook" alt="facebook" >
-            <img src="../assets/icons/instagram.png" title="instagram" alt="instagram">
-            <img src="../assets/icons/github.png" title="github" alt="github">
-            <img src="../assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+            <div>
+                <img src="assets/icons/facebook.png" title="facebook" alt="facebook" >
+                <img src="assets/icons/instagram.png" title="instagram" alt="instagram">
+                <img src="assets/icons/github.png" title="github" alt="github">
+                <img src="assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+            </div>
         </div>
     </section>
+    <div class="circle6"></div>
+    <div class="circle7"></div>
 </main>
 
 <!--Footer Section-->
