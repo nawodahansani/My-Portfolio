@@ -602,12 +602,13 @@ main{
     top: 300px;
     right: 100px;
 }
-/*#main5>section:nth-child(3)>div:nth-child(2)>h4{
+#main5>section:nth-child(3)>div:nth-child(2)>h4{
+    /*Social*/
     display: flex;
     justify-content: end;
     font-size: 20px;
 
-}*/
+}
 /*#main5>section:nth-child(3)>div:nth-child(2)>address{
     line-height: 1.8;
 }*/
