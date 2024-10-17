@@ -271,6 +271,7 @@ main{
     opacity: 0.8;
     filter: blur(150px);
     transform: rotate(90deg);
+    z-index: -1;
 }
 /*.line1{
     position: absolute;
