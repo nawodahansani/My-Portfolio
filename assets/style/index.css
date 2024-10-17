@@ -622,11 +622,11 @@ main{
     grid-template-columns: repeat(4,1fr);
     column-gap: 20px;
 }
-/*#main5>section:nth-child(3)>div:nth-child(2)>div>img{
+#main5>section:nth-child(3)>div:nth-child(2)>div>img{
     width: 45px;
     height: 45px;
-    transition: transform 0.3s ease;
-}*/
+    /*transition: transform 0.3s ease;*/
+}
 /*#main5>section:nth-child(3)>div:nth-child(2)>div>img:hover{
     cursor: pointer;
     background: linear-gradient(270deg,#FF29C3,#00C2FF);
