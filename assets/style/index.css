@@ -640,11 +640,11 @@ main{
     left: 50px;
     top: 30px;
 }
-/*#main5>section:nth-child(2)>div>div>a{
-    text-decoration: none; !* Removes the default underline *!
-    color: inherit; !* Inherits the color from the parent li *!
-    font-weight: normal; !* Set font-weight to normal if needed *!
-}*/
+#main5>section:nth-child(2)>div>div>a{
+    text-decoration: none; /* Removes the default underline */
+    color: inherit; /* Inherits the color from the parent li */
+    font-weight: normal; /* Set font-weight to normal if needed */
+}
 /*
 .circle6{
     position: absolute;
