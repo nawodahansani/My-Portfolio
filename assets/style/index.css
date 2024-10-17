@@ -580,10 +580,10 @@ main{
     position: absolute;
     top: 320px;
 }
-/*#main5>section:nth-child(2)>div>img{
+#main5>section:nth-child(2)>div>img{
     width: 45px;
     height: 45px;
-}*/
+}
 
 /*#main5>section:nth-child(3)>div:first-child{
     position: absolute;
