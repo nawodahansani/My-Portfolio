@@ -541,10 +541,10 @@ main{
     cursor: pointer;
 }*/
 /*------------Contact Section-------------*/
-/*#main5{
+#main5{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-}*/
+}
 #main5>h3{
     position: absolute;
     top: 15px;
@@ -559,10 +559,9 @@ main{
 #main5>section{
     color: white;
 }
-/*
 #main5>section:nth-child(2)>div>div>h4{
     font-size: 20px;
-}*/
+}
 /*#main5>section:nth-child(2)>div{
     display: flex;
     align-items: center;
