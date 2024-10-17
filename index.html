@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" > <!--style="background: black"-->
+<html lang="en"  style="background: black">
 <head>
     <meta charset="UTF-8">
     <title>Nawo</title>
 
-    <link rel="stylesheet" href="assets/style/index.css">
-    <link rel="stylesheet" href="assets/style/normalize.css">
+    <link rel="stylesheet" href="../assets/style/index.css">
+    <link rel="stylesheet" href="../assets/style/normalize.css">
 
         <!--Lemon font-style-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!------AOS Library------------>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--------Animate.css---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 </head>
@@ -37,30 +43,31 @@
 </header>
 
 <!--Hero Section-->
-<main>
+<main id="main1">
+    <div class="circle1"></div>
     <section>
-        <h3>Hi</h3>
-        <h4>my name is</h4>
-        <h1>Nawoda Hansani .</h1>
-        <h3>A software engineering student.</h3>
+        <h3>Hi  <span>my name is</span></h3>
+
+        <h1 >Nawoda Hansani .</h1>
+        <h3 >A student in software engineering .</h3>
     </section>
+    <div class="mypic">
+        <img src="../assets/images/img.png" title="mypic" alt="profile_image" width="300">
+    </div>
     <section>
-        <img src="assets/images/profile-pic.jpeg" title="mypic" alt="profile_image" width="200">
-    </section>
-    <section>
-        <img src="assets/icons/facebook.png" title="facebook" alt="facebook" >
-        <img src="assets/icons/instagram.png" title="instagram" alt="instagram">
-        <img src="assets/icons/github.png" title="github" alt="github">
-        <img src="assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+        <img src="../assets/icons/facebook.png" title="facebook" alt="facebook" >
+        <img src="../assets/icons/instagram.png" title="instagram" alt="instagram">
+        <img src="../assets/icons/github.png" title="github" alt="github">
+        <img src="../assets/icons/linkedin.png" title="linkedin" alt="linkedin">
     </section>
 </main>
 
 <!--About Section-->
-<main >
+<main id="main2">
     <section>
         <h3>About me</h3>
         <div>
-            <h5>Hello! My name is Nawoda Hansani<br>Full-Stack Developer<br>I'm 22 years old</h5>
+            <h5>My name is Nawoda Hansani<br>Full-Stack Developer<br>I'm 22 years old</h5>
         </div>
     </section>
     <section>
@@ -78,41 +85,47 @@
             <h5>Web Design<br>UI/UX Design<br>Stand-alone Applications</h5>
         </div>
     </section>
+    <div class="circle2"></div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+    <div class="line4"></div>
 </main>
 
 <!--Skills Section-->
-<main>
+<main id="main3">
     <h3>Skills</h3>
     <section>
-        <img src="assets/images/java.png" title="java" alt="java" width="50">
-        <img src="assets/images/mysql.png" title="mysql" alt="mysql" width="50" >
-        <img src="assets/images/figma.png" title="figma" alt="figma" width="50">
-        <img src="assets/images/html.png" title="html" alt="html" width="50">
-        <img src="assets/images/css.png" title="css" alt="css" width="50">
-        <img src="assets/images/javascript.png" title="javascript" alt="javascript" width="75">
+        <img src="../assets/images/java.png" title="java" alt="java" width="90">
+        <img src="../assets/images/mysql.png" title="mysql" alt="mysql" width="90" >
+        <img src="../assets/images/figma.png" title="figma" alt="figma" width="90">
+        <img src="../assets/images/html.png" title="html" alt="html" width="90">
+        <img src="../assets/images/css.png" title="css" alt="css" width="90">
+        <img src="../assets/images/javascript.png" title="javascript" alt="javascript" width="90">
     </section>
 </main>
 
 <!--Project Section-->
-<main>
+<main id="main4">
     <h3>Project</h3>
     <section>
         <div>
             <h4>Connect4 Game</h4>
             <p>It is a simple game in which<br>the players choose a colour <br>and then take turns <br>dropping coloured tokens <br>into a five-row,six-column <br>vertically suspended grid  .</p>
-            <img src="assets/icons/github.png" title="github" alt="github">
+            <img src="../assets/icons/github.png" title="github" alt="github">
         </div>
         <div>
             <h4>Fishmarketing System</h4>
             <p>An item ordering system for <br>a small fish farming and <br>marketing business.</p>
-            <img src="assets/icons/github.png" title="github" alt="github">
+            <img src="../assets/icons/github.png" title="github" alt="github">
         </div>
         <div>
             <h4>Portfolio Design</h4>
             <p>Find out how to build a<br>personal website .</p>
-            <img src="assets/icons/github.png" title="github" alt="github">
+            <img src="../assets/icons/github.png" title="github" alt="github">
         </div>
     </section>
+    <div class="circle3"></div>
 </main>
 
 <!--Contact Section-->
@@ -120,33 +133,33 @@
     <h3>Say Hello !</h3>
     <section>
         <div>
-            <img src="assets/icons/email.png" title="email" alt="email">
+            <img src="../assets/icons/email.png" title="email" alt="email">
             <h4>Email</h4>
             <a href="mailto:nawodahansani13@gmail.com">nawodahansani13@gmail.com</a>
         </div>
         <div>
-            <img src="assets/icons/whatsapp.png" title="whatsapp" alt="whatsapp">
+            <img src="../assets/icons/whatsapp.png" title="whatsapp" alt="whatsapp">
             <h4>Whatsapp</h4>
             <a href="https://wa.me/qr/UCIZUVPH7JC7O1">076 973 6663</a>
         </div>
         <div>
-            <img src="assets/icons/phone-message.png" title="call" alt="call">
+            <img src="../assets/icons/phone-message.png" title="call" alt="call">
             <h4>Contact No</h4>
             <a href="tel:0769736663">076 973 6663</a>
         </div>
     </section>
     <section>
         <div>
-            <img src="assets/icons/address.png" title="address" alt="address">
+            <img src="../assets/icons/address.png" title="address" alt="address">
             <h4>Address</h4>
             <address>Bandaragama,<br>Kaluthara,<br>Sri Lanka</address>
         </div>
         <div>
             <h4>Social</h4>
-            <img src="assets/icons/facebook.png" title="facebook" alt="facebook" >
-            <img src="assets/icons/instagram.png" title="instagram" alt="instagram">
-            <img src="assets/icons/github.png" title="github" alt="github">
-            <img src="assets/icons/linkedin.png" title="linkedin" alt="linkedin">
+            <img src="../assets/icons/facebook.png" title="facebook" alt="facebook" >
+            <img src="../assets/icons/instagram.png" title="instagram" alt="instagram">
+            <img src="../assets/icons/github.png" title="github" alt="github">
+            <img src="../assets/icons/linkedin.png" title="linkedin" alt="linkedin">
         </div>
     </section>
 </main>
@@ -156,6 +169,12 @@
     <hr>
     <small>Made By Nawoda Hansani</small>
 </footer>
+
+<!------AOS Library------------>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>
