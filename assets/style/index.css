@@ -144,12 +144,12 @@ main{
     background-clip: text;
     -webkit-text-stroke: 7px transparent;
 }
-/*#main1>section:nth-child(2)>div:first-child>div:nth-child(2){
+#main1>section:nth-child(2)>div:first-child>div:nth-child(2){
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 400px;
     margin-top: 40px;
-}*/
+}
 /*#main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img{
     width: 45px;
     transition: transform 0.3s ease;
