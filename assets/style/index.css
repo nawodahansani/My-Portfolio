@@ -556,9 +556,9 @@ main{
     font-size: 32px;
     color: #B6B3B3;
 }
-/*#main5>section{
+#main5>section{
     color: white;
-}*/
+}
 /*
 #main5>section:nth-child(2)>div>div>h4{
     font-size: 20px;
