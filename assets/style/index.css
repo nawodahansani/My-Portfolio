@@ -110,12 +110,12 @@ main{
     position: relative;
     left: 50px;
 }
-/*#main1>section:nth-child(2)>div:first-child>div:first-child{
+#main1>section:nth-child(2)>div:first-child>div:first-child{
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-}*/
+}
 /*#main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child{
     font-size: 32px;
     margin-bottom: 24px;
