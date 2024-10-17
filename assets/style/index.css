@@ -125,25 +125,25 @@ main{
     font-size: 20px;
     font-weight: normal;
 }
-/*#main1>section:nth-child(2)>div:first-child>div:first-child>h3:nth-child(3){
+#main1>section:nth-child(2)>div:first-child>div:first-child>h3:nth-child(3){
     font-size: 24px;
     font-weight: 500;
-}*/
-/*#main1>section:nth-child(2)>div:first-child>div:first-child>h1{
+}
+#main1>section:nth-child(2)>div:first-child>div:first-child>h1{
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 64px;
     color: #B6B3B3;
-   !* line-height: 84px;*!
+   /* line-height: 84px;*/
     margin-top: 0px;
     margin-bottom: 0px;
 
-    background: linear-gradient(90deg, #00C2FF, #FF29C3);
+   /* background: linear-gradient(90deg, #00C2FF, #FF29C3);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-stroke: 7px transparent;
-}*/
+    -webkit-text-stroke: 7px transparent;*/
+}
 /*#main1>section:nth-child(2)>div:first-child>div:nth-child(2){
     display: grid;
     grid-template-columns: repeat(4,1fr);
