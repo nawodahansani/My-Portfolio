@@ -268,7 +268,6 @@ main{
 /*------------About Section----------------*/
 .circle2{
     /* Eclipse */
-
     position: absolute;
     width: 600px;
     height: 600px;
@@ -317,14 +316,14 @@ main{
     width: 350px;
     height: 4px;
     left: 250px;
-    bottom: 195px;
+    bottom: 210px;
     background: linear-gradient(270deg,#FF29C3,#00C2FF);
     transform: rotate(180deg);
 }
 
     /*Titles*/
 #main2>section>h3{
-    font-family: "Lemon", serif;
+    font-family: "Rhodium Libre", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
@@ -382,13 +381,13 @@ main{
     /* Service */
     position: absolute;
     left: 100px;
-    top: 290px;
+    top: 280px;
 }
 #main2>section:nth-child(3)>div {
     /* Web Design UI/UX Design Standalon Application */
     position: absolute;
     left: 100px;
-    bottom: 20px;
+    bottom: 50px;
 }
 
 /*------------Skill Section----------------*/
@@ -406,7 +405,7 @@ main{
     position: absolute;
     top: 15px;
 
-    font-family: "Lemon", serif;
+    font-family: "Rhodium Libre", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
@@ -560,7 +559,7 @@ main{
     top: 15px;
     left: 100px;
 
-    font-family: "Lemon", serif;
+    font-family: "Rhodium Libre", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
