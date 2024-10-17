@@ -405,16 +405,16 @@ main{
 }
 
 /* Grid layout for skill icons */
-/*#main3 section {
+#main3 section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); !* 3 columns *!
-    grid-template-rows: repeat(2, auto); !* 2 rows *!
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
     column-gap: 200px;
     row-gap: 100px;
     justify-items: center;
     align-items: center;
     padding: 20px;
-}*/
+}
 
 /* Style for the images */
 /*#main3 section img {
