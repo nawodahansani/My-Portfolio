@@ -555,17 +555,17 @@ main{
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
 
-#main4 * {
+#sec1 {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-#main4 {
+#sec1 {
   /*  background-color: #FFE53B;
     background-image: linear-gradient(147deg, #FFE53B 0%, #fd3838 74%);
     min-height: 100vh;*/
-    font-family: 'Fira Sans', sans-serif;
+    font-family: "Lato", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -575,6 +575,7 @@ main{
     width: 95%;
     position: relative;
     max-width: 800px;
+    top: 60px;
     margin: auto;
     background: #fff;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
@@ -582,6 +583,7 @@ main{
     border-radius: 25px;
     height: 400px;
     transition: all .3s;
+    box-sizing: border-box;
 }
 
 .blog-slider__wrp {
@@ -643,12 +645,12 @@ main{
     }
 }
 
-.blog-slider__code {
+/*.blog-slider__code {
     color: #7b7992;
     margin-bottom: 15px;
     display: block;
     font-weight: 500;
-}
+}*/
 
 .blog-slider__title {
     font-size: 24px;
