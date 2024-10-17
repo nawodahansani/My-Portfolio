@@ -647,7 +647,6 @@ main{
     color: inherit; /* Inherits the color from the parent li */
     font-weight: normal; /* Set font-weight to normal if needed */
 }
-/*
 .circle6{
     position: absolute;
     width: 500px;
@@ -662,8 +661,8 @@ main{
     filter: blur(100px);
     transform: rotate(129deg);
     z-index: -1;
-}*/
-/*.circle7{
+}
+.circle7{
     position: absolute;
     width: 600px;
     height: 600px;
@@ -676,7 +675,7 @@ main{
     filter: blur(150px);
     transform: rotate(199deg);
     z-index: -1;
-}*/
+}
 
 /*------------Footer Section----------------*/
 /*footer{
