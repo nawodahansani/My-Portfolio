@@ -124,22 +124,26 @@ main{
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child{
     /*Hi*/
+
     font-size: 32px;
     margin-bottom: 24px;
     margin-top: 0px;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child>span{
     /*my name is*/
+
     font-size: 20px;
     font-weight: normal;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:nth-child(3){
     /*A student in software engineering*/
+
     font-size: 24px;
     font-weight: 500;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h1{
     /*Nawoda Hansani*/
+
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
@@ -156,6 +160,7 @@ main{
 }
 #main1>section:nth-child(2)>div:first-child>div:nth-child(2){
     /*Social icons*/
+
     display: grid;
     grid-template-columns: repeat(4,1fr);
     width: 400px;
@@ -252,8 +257,8 @@ main{
 }*/
 
 /*------------About Section----------------*/
-/*.circle2{
-    !* Eclipse *!
+.circle2{
+    /* Eclipse */
 
     position: absolute;
     width: 600px;
@@ -266,8 +271,7 @@ main{
     opacity: 0.8;
     filter: blur(150px);
     transform: rotate(90deg);
-
-}*/
+}
 /*.line1{
     position: absolute;
     width: 300px;
@@ -308,13 +312,14 @@ main{
     transform: rotate(180deg);
 }*/
 
-/*#main2>section>h3{
+    /*titles*/
+#main2>section>h3{
     font-family: "Lemon", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
     color: #B6B3B3;
-}*/
+}
 /*#main2>section>div{
     font-family: 'Poppins';
     font-style: normal;
