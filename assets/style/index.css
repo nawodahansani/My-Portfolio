@@ -320,14 +320,14 @@ main{
     font-size: 32px;
     color: #B6B3B3;
 }
-/*#main2>section>div{
+#main2>section>div{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
     color: white;
-}*/
+}
 /*#main2>section:first-child>h3{
     !* About me *!
     position: absolute;
