@@ -431,7 +431,7 @@ main{
     box-shadow: 0px 4px 20px #00C2FF;
 }*/
 
-/*.circle4{
+.circle4{
     position: absolute;
     width: 500px;
     height: 500px;
@@ -445,8 +445,7 @@ main{
     filter: blur(100px);
     transform: rotate(129deg);
     z-index: -1;
-}*/
-/*
+}
 .circle5{
     position: absolute;
     width: 400px;
@@ -460,7 +459,7 @@ main{
     filter: blur(150px);
     transform: rotate(137deg);
     z-index: -1;
-}*/
+}
 
 /*------------Project Section----------------*//*
 #main4{
