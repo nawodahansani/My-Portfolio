@@ -125,21 +125,29 @@ main{
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child{
     /*Hi*/
 
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+
     font-size: 32px;
     margin-bottom: 24px;
     margin-top: 0;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:first-child>span{
     /*my name is*/
-
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 20px;
-    font-weight: normal;
+
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h3:nth-child(3){
     /*A student in software engineering*/
-
-    font-size: 24px;
+    font-family: "Lato", sans-serif;
     font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
 }
 #main1>section:nth-child(2)>div:first-child>div:first-child>h1{
     /*Nawoda Hansani*/
@@ -559,6 +567,9 @@ main{
 }
 #main5>section{
     color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #main5>section:nth-child(2)>div>div>h4{
     font-size: 20px;
