@@ -152,15 +152,15 @@ main{
 }
 #main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img{
     width: 45px;
-    /*transition: transform 0.3s ease;*/
+    transition: transform 0.3s ease;
 }
-/*#main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img:hover{
+#main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img:hover{
     cursor: pointer;
     background: linear-gradient(270deg,#FF29C3,#00C2FF);
     width: 45px;
     border-radius: 100%;
     transform: scale(1.1);
-}*/
+}
 /*#main1>section:nth-child(2)>div:first-child>div:nth-child(2)>img:nth-child(4):hover{
     border-radius: 15%;
     transform: scale(1.1);
