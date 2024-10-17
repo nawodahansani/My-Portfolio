@@ -585,11 +585,11 @@ main{
     height: 45px;
 }
 
-/*#main5>section:nth-child(3)>div:first-child{
+#main5>section:nth-child(3)>div:first-child{
     position: absolute;
     top: 120px;
     right: 100px;
-}*/
+}
 
 /*
 #main5>section:nth-child(3)>div:first-child>h4{
