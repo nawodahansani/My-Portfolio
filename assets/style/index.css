@@ -328,18 +328,18 @@ main{
     line-height: 30px;
     color: white;
 }
-/*#main2>section:first-child>h3{
-    !* About me *!
+#main2>section:first-child>h3{
+    /* About me */
     position: absolute;
     left: 100px;
     top: 20px;
-}*/
-/*#main2>section:first-child>div{
-    !* Hello ! My name is Nawoda Hansani, Full-Stack Developer. I’m 22 years old. *!
+}
+#main2>section:first-child>div{
+    /* Hello ! My name is Nawoda Hansani, Full-Stack Developer. I’m 22 years old. */
     position: absolute;
     left: 100px;
     top: 110px;
-}*/
+}
 /*
 #main2>section:nth-child(2)>h3{
     !* Education *!
