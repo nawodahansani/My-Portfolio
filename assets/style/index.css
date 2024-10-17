@@ -77,9 +77,8 @@ main{
     border-radius: 24px;
 
 }
-/*.circle1{
-    !* Eclipse *!
-
+.circle1{
+    /* Eclipse */
     position: absolute;
     width: 400px;
     height: 400px;
@@ -94,7 +93,7 @@ main{
     transform: rotate(-17.38deg);
     z-index: -1;
 
-}*/
+}
 /*#main1{
     position: relative;
     display: flex;
