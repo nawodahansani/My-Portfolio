@@ -412,8 +412,8 @@ main{
     column-gap: 200px;
     row-gap: 100px;
     justify-items: center;
-    align-items: center;
-    padding: 20px;
+    /*align-items: center;
+    padding: 20px;*/
 }
 
 /* Style for the images */
