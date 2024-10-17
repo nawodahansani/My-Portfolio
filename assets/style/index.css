@@ -312,7 +312,7 @@ main{
     transform: rotate(180deg);
 }*/
 
-    /*titles*/
+    /*Titles*/
 #main2>section>h3{
     font-family: "Lemon", serif;
     font-weight: 400;
@@ -340,21 +340,18 @@ main{
     left: 100px;
     top: 110px;
 }
-/*
 #main2>section:nth-child(2)>h3{
-    !* Education *!
+    /* Education */
     position: absolute;
     right: 100px;
     top: 138px;
-    z-index: 1;
-}*/
-/*#main2>section:nth-child(2)>div{
-    !* Taxila Central College O/L - 2018 A/L - 2022 Institute Of Software Engineering Graduate Diploma of Software Engineering 2023 - 2025 *!
+}
+#main2>section:nth-child(2)>div{
+    /* Taxila Central College O/L - 2018 A/L - 2022 Institute Of Software Engineering Graduate Diploma of Software Engineering 2023 - 2025 */
     position: absolute;
     right: 130px;
     top: 214px;
-    z-index: 1;
-}*/
+}
 /*
 #main2>section:nth-child(2)>div>h5:first-child{
     margin-bottom:0px;
