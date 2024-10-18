@@ -78,6 +78,7 @@ main{
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
 }
+
 /*------------Hero Section----------------*/
 #main1{
     position: relative;
@@ -390,6 +391,7 @@ main{
     left: 100px;
     bottom: 50px;
 }
+
 
 /*------------Skill Section----------------*/
 #main3 {
@@ -823,7 +825,7 @@ main{
     opacity: 0.6;
     filter: blur(100px);
     transform: rotate(129deg);
-    z-index: -2;
+    z-index: -4;
 }
 
 #circle9{
@@ -839,7 +841,7 @@ main{
     opacity: 0.6;
     filter: blur(100px);
     transform: rotate(129deg);
-    z-index: -2;
+    z-index: -4;
 }
 
 /*------------Contact Section-------------*/
@@ -999,4 +1001,34 @@ footer>small{
     font-style: normal;
     font-size: 16px;
 
+}
+
+@media all and (max-width: 1072px) {
+    main{
+        width: 1000px;
+    }
+    .line1{
+        width: 200px;
+    }
+    .line3{
+        width: 200px;
+    }
+    .line4{
+        width: 250px;
+    }
+    #project{
+        left: 450px;
+    }
+    #main6>#div1>div{
+        width: 350px;
+        height: 175px;
+    }
+    #div1{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 20px;
+    }
+    #main6{
+        height: 700px;
+    }
 }
