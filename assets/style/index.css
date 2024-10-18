@@ -77,7 +77,6 @@ main{
     backdrop-filter: blur(15px);
     /* Note: backdrop-filter has minimal browser support */
     border-radius: 24px;
-
 }
 /*------------Hero Section----------------*/
 #main1{
@@ -763,6 +762,75 @@ main{
     top: 20px;
 
     background: linear-gradient(320deg,#FF29C3 20%,#00C2FF 100%);
+
+    opacity: 0.6;
+    filter: blur(100px);
+    transform: rotate(129deg);
+    z-index: -2;
+}
+/*------------Assignment Section-------------*/
+#main6>h3{
+    /*Assignment*/
+    position: absolute;
+    top: 20px;
+    left: 100px;
+
+    font-family: "Rhodium Libre", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #B6B3B3;
+}
+#main6{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    flex-direction: column;
+}
+#div1{
+    display: flex;
+    column-gap: 20px;
+    /*justify-content: center;
+    align-items: center;
+    flex-direction:row ;*/
+}
+#main6>#div1>div{
+    width: 200px;
+    height: 250px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.05) 3.44%, rgba(255, 255, 255, 0.02) 64.82%);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 10px;
+}
+#circle8{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    left: 150px;
+    top: 150px;
+
+    background: linear-gradient(280deg,#FF29C3 20%,#00C2FF 100%);
+
+    opacity: 0.6;
+    filter: blur(100px);
+    transform: rotate(129deg);
+    z-index: -2;
+}
+
+#circle9{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    right: 100px;
+    top: -20px;
+
+    background: linear-gradient(280deg,#FF29C3 20%,#00C2FF 100%);
 
     opacity: 0.6;
     filter: blur(100px);
