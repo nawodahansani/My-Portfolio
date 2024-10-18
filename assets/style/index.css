@@ -1153,4 +1153,15 @@ footer>small{
     #main5>section:nth-child(3)>div:nth-child(2)>div>img:hover{
         width: 40px;
     }
+    #main5>section:nth-child(2)>div>div>h4{
+        font-size: 18px;
+    }
+    #main5>section:nth-child(3)>div:first-child>h4{
+        font-size: 18px;
+    }
+    #main5>section:nth-child(3)>div:nth-child(2)>h4{
+        font-size: 18px;
+    }
 }
+
+
