@@ -806,6 +806,9 @@ main{
     padding: 30px;
     border-radius: 10px;
 }
+.desc{
+    line-height: 1.3;
+}
 #circle8{
     position: absolute;
     width: 400px;
