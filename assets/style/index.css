@@ -587,7 +587,8 @@ main{
     max-width: 800px;
     top: 100px;
     margin: auto;
-    background: #fff;
+    background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.05) 3.44%, rgba(255, 255, 255, 0.02) 64.82%);
+    backdrop-filter: blur(15px);
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
     border-radius: 25px;
@@ -624,8 +625,8 @@ main{
     width: 300px;
     flex-shrink: 0;
     height: 300px;
-    background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);
-    box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+    /*background-image: linear-gradient(147deg, #fe8a39 0%, #fd3838 74%);*/
+   /* box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);*/
     border-radius: 20px;
     transform: translateX(-80px);
     overflow: hidden;
@@ -663,14 +664,14 @@ main{
 }*/
 
 .blog-slider__title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
-    color: #0d0925;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .blog-slider__text {
-    color: #4e4a67;
+    color: #ffffff;
     margin-bottom: 30px;
     line-height: 1.5em;
 }
@@ -753,6 +754,21 @@ main{
     }
 }
 
+#circle3{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    left: 350px;
+    top: 20px;
+
+    background: linear-gradient(320deg,#FF29C3 20%,#00C2FF 100%);
+
+    opacity: 0.6;
+    filter: blur(100px);
+    transform: rotate(129deg);
+    z-index: -2;
+}
 
 /*------------Contact Section-------------*/
 #main5{
