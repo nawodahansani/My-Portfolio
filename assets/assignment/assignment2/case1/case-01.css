@@ -1,0 +1,26 @@
+section{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+}
+section>div{
+    background-color: mediumpurple;
+    color: white;
+    padding: 25px 20px;
+    width: 250px;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 20px 0px;
+    border-radius: 0px 8px 8px 0px;
+    box-shadow: 2px 5px 10px gray;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -225px;
+    cursor: auto;
+    transition-duration: 1s;
+}
+section>div:hover{
+    margin-left: 0;
+}

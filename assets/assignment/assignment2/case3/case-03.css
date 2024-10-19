@@ -1,0 +1,46 @@
+:root{
+    --x: 180px;
+    --y: 80px;
+}
+body{
+    overflow: hidden;
+}
+div {
+    width: var(--x);
+    height: var(--y);
+
+    background-color: darkblue;
+    border-radius: 20px;
+
+    animation: my-animation 3s infinite alternate;
+}
+@keyframes my-animation {
+    0%{
+        margin-left: 0;
+        margin-top: 0;
+        transform: rotate(0deg);
+        background-color: darkblue;
+
+    }
+    25%{
+        margin-left: calc(100vw - var(--x));
+        margin-top: 0;
+        background-color: yellow;
+        transform: rotate(180deg);
+    }
+    50%{
+        margin-left: calc(100vw - var(--x));
+        margin-top: calc(100vh - var(--y));
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    75%{
+        margin-left: 0;
+        margin-top: calc(100vh - var(--y));
+        background-color: deeppink;
+        transform: rotate(-180deg);
+    }
+    100%{
+        background-color: orangered;
+    }
+}

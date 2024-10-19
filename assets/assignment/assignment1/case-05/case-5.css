@@ -1,0 +1,48 @@
+section{
+    width: 1000px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+}
+
+section>div{
+    border: 1px solid black;
+}
+
+section>div:first-child{
+    background: red;
+}
+section>div:nth-child(2){
+    background: green;
+}
+section>div:nth-child(3){
+    background: orangered;
+}
+section>div:nth-child(4){
+    background: purple;
+}
+section>div:nth-child(5){
+    background: deeppink;
+}
+section>div:nth-child(6){
+    background: blue;
+}
+section>div:nth-child(7){
+    background: firebrick;
+}
+section>div:nth-child(8){
+    background: mediumpurple;
+}
+section>div:nth-child(9){
+    background: darkblue;
+}
+section>div:nth-child(10){
+    background: yellow;
+}
+section>div:nth-child(11){
+    background: mediumseagreen;
+}
+section>div:nth-child(12){
+    background: lightgreen;
+}

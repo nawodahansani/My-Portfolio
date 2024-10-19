@@ -1,0 +1,105 @@
+header{
+    position: relative;
+    height: 60px;
+    border-bottom: 2px solid black;
+}
+header>img{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+}
+header>nav{
+    height: fit-content;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header>nav>ul{
+    list-style: none;
+}
+header>nav>ul>li{
+    display: inline;
+    margin: 0px 10px;
+}
+
+main{
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+main>aside{
+    background: rebeccapurple;
+    color: white;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+main>aside>nav>ul{
+    list-style: none;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+main>aside>nav>ul>li{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+main>section{
+    margin-left: 210px;
+    font-size: 15px;
+}
+main>section>p:last-child{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+main>section>section{
+    background: aquamarine;
+    position: relative;
+    height: 300px;
+    border-top: 1px solid brown;
+    border-bottom: 1px solid green;
+    border-left:1px solid brown ;
+    border-right:1px solid brown ;
+    top: 3px;
+    right: 5px;
+}
+main>section>section>div{
+    background: url("../assets/gif/monkey.gif");
+    width: calc(100%/3);
+    height: 300px;
+    position: absolute;
+    border-right: 1px solid green;
+}
+main>section>section>div:nth-child(2){
+    right: 0;
+    left: 0;
+    margin:auto;
+    border-right: 1px solid green;
+}
+main>section>section>div:last-child{
+    right: 0;
+}
+
+footer{
+    background: gray;
+}
+footer>div{
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+

@@ -1,0 +1,211 @@
+section:first-child{
+    background: red;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+}
+
+section:nth-child(2){
+    background: green;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+}
+section:nth-child(3){
+    background: orange;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+}
+section:nth-child(4){
+    background: deeppink;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section:first-child>div{
+    background: white;
+    width: 175px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(2)>div{
+    background: white;
+    width: 175px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(3)>div{
+    background: white;
+    width: 175px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(4)>div{
+    background: white;
+    width: 175px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section:first-child>div>div{
+    background: red;
+    width: 75px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(2)>div>div{
+    background: red;
+    width: 75px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(3)>div>div{
+    background: red;
+    width: 75px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+section:nth-child(4)>div>div{
+    background: red;
+    width: 75px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div:nth-child(5){
+    background: white;
+    width: 175px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+div:nth-child(5)>div{
+    background: red;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div:nth-child(6){
+    background: white;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+div:nth-child(7){
+    background: white;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: -100px;
+    top: -100px;
+}
+div:nth-child(8){
+    background: white;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+}
+div:nth-child(9){
+    background: white;
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    left: -100px;
+    bottom: -100px;
+}
+div:nth-child(10){
+    background: white;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: calc(-150px/2);
+    margin: auto;
+
+}
+div:nth-child(11){
+    background: white;
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: calc(-150px/2);
+    margin: auto;
+}
+
+body{
+    overflow: hidden;
+}
