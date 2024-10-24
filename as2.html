@@ -3,6 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <!--Rhodium Libre font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rhodium+Libre&display=swap" rel="stylesheet">
+
+    <!--Lato font-style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
     <style>
         body{
             background-color: black;
@@ -11,11 +23,10 @@
             position: absolute;
             box-sizing: border-box;
             width: 1200px;
-            height: 540px;
+            height: 850px;
             right: 0;
             left: 0;
-            top: 0;
-            bottom: 0;
+            top: 50px;
             margin: auto;
 
             overflow: hidden;
@@ -23,6 +34,11 @@
             backdrop-filter: blur(15px);
             /* Note: backdrop-filter has minimal browser support */
             border-radius: 24px;
+
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center;     /* Centers vertically */
+            /*flex-direction: column;*/
         }
         main>h3{
             position: absolute;
@@ -35,49 +51,70 @@
             font-size: 32px;
             color: #B6B3B3;
         }
+        #div{
+            display: flex;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center; /* Centers horizontally */
+            flex-wrap: wrap;
+        }
+        #div>div{
+            width: 200px;
+            height: 250px;
+            color: white;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.05) 3.44%, rgba(255, 255, 255, 0.02) 64.82%);
+            backdrop-filter: blur(15px);
+            padding: 30px;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
 <main>
     <h3>Assignment 02</h3>
-    <div>
+    <div id="div">
         <div id="card1">
             <h2>Case 01</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
         <div id="card2">
             <h2>Case 02</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
         <div id="card3">
             <h2>Case 03</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
         <div id="card4">
             <h2>Case 04</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
         <div id="card5">
             <h2>Case 05</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
         <div id="card6">
             <h2>Case 06</h2>
             <p></p>
             <a><img src="assets/icons/github1.png" alt=""></a>
-            <a><img src="" alt=""></a>
+            <a><img src="assets/icons/play.png" alt=""></a>
         </div>
     </div>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
 </main>
 </body>
 </html>
