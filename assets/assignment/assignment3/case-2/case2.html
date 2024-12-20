@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        section>section:first-child>div{
+            width: 700px;
+            height: 3px;
+            background-color: white;
+            position: absolute;
+        }
+        section>section:first-child>div:first-child{
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+        section>section:first-child>div:nth-child(2){
+            margin-left: 600px;
+            margin-top: 300px;
+        }
+        section>section:nth-child(2){
+            display: flex;
+            column-gap: 20px;
+        }
+        section>section:nth-child(2)>div{
+            position: relative;
+            width: 100px;
+            height: 50px;
+            border-radius: 5px;
+            left: 600px;
+            top: 230px;
+        }
+        section>section:nth-child(2)>div:nth-child(1){
+            top: 130px;
+        }
+        section>section:nth-child(2)>div:nth-child(6){
+            top: 340px;
+        }
+        section>section:nth-child(3){
+            padding: 400px;
+        }
+        section>section:nth-child(3)>button{
+            width: 500px;
+            height: 60px;
+            border: 0;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #0a0a0a;
+            font-weight: Bold;
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 300px;
+        }
+        #div1{
+           background-color: red;
+        }
+        #div2{
+            background-color: green;
+        }
+        #div3{
+            background-color: blue;
+        }
+        #div4{
+            background-color: yellow;
+        }
+        #div5{
+            background-color: pink;
+        }
+        #div6{
+            background-color: hotpink;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <div id="div1" ></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+        <div id="div5"></div>
+        <div id="div6"></div>
+    </section>
+    <section>
+        <button id="start">START</button>
+        <button id="stop">STOP</button>
+    </section>
+</section>
+<script>
+    let arr = ['red','green','blue','yellow','cyan','purple'];
+    let stop;
+    document.getElementById('start').addEventListener('click',() => {
+        if(!stop) {
+            stop = setInterval(() =>{
+                let lastValue =  arr.pop();
+                arr.unshift(lastValue);
+                document.getElementById("div1").style.backgroundColor = arr[0];
+                document.getElementById("div2").style.backgroundColor  = arr[1];
+                document.getElementById("div3").style.backgroundColor  = arr[2];
+                document.getElementById("div4").style.backgroundColor  = arr[3];
+                document.getElementById("div5").style.backgroundColor  = arr[4];
+                document.getElementById("div6").style.backgroundColor = arr[5];
+            },1000);
+        }
+    });
+    document.getElementById('stop').addEventListener('click',() =>{
+        clearInterval(stop);
+        stop = null;
+    });
+</script>
+</body>
+</html>

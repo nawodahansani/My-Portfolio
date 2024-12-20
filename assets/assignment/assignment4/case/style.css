@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin-top: calc(100vh/3);
+}
+section>h1{
+    color: #d73758;
+    display: flex;
+    justify-content: center;
+}
+section>section:nth-child(3)>div{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+section>section:nth-child(3){
+    display: flex;
+    column-gap: 10px;
+    margin: 20px;
+}
+section>section:nth-child(5)>button{
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+section>section:nth-child(5){
+    display: flex;
+    justify-content: center;
+}
+#start{
+    background-color: lightcoral;
+}
+#stop{
+    background-color: #a24242;
+}
+#line1{
+    width: 700px;
+    height: 1px;
+    background-color: white;
+}
+#line2{
+    width:700px;
+    height: 1px;
+    background-color: white;
+}

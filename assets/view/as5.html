@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>assignment-5</title>
 
     <!--Rhodium Libre font-family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,16 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-
     <style>
         body{
             background-color: black;
         }
         main{
-            position: absolute;
+            position: relative;
             box-sizing: border-box;
             width: 1200px;
-            height: 850px;
+            height: 550px;
             right: 0;
             left: 0;
             top: 50px;
@@ -60,15 +59,28 @@
         }
         #div>div{
             width: 200px;
-            height: 250px;
+            height: 100px;
             color: white;
             font-family: "Lato", sans-serif;
             font-weight: 400;
             font-style: normal;
             background: linear-gradient(106.51deg, rgba(255, 255, 255, 0.05) 3.44%, rgba(255, 255, 255, 0.02) 64.82%);
             backdrop-filter: blur(15px);
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        #div>div:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        #div>div:hover>h2{
+            color: #062744;
+        }
+        #div>div>h2{
+            margin-top: 0px;
         }
         #circle1{
             position: absolute;
@@ -100,6 +112,88 @@
             transform: rotate(129deg);
             z-index: -4;
         }
+        footer{
+            height: 60px;
+            position: relative;
+            bottom: -50px;
+            padding-top: 30px;
+        }
+        footer>small{
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+        }
+        @media all and (max-width: 1024px) {
+            main{
+                width: 950px;
+                height: 600px;
+            }
+            main>#div>div{
+                width: 350px;
+                height: 100px;
+            }
+            main>h3{
+                top: 0px;
+            }
+        }
+        @media all and (max-width: 768px){
+            main{
+                width: 700px;
+                height: 500px;
+            }
+            #div>div>a>img{
+                width: 25px;
+                height: 25px;
+            }
+            footer>small{
+                font-size: 14px;
+            }
+        }
+        @media all and (max-width: 425px){
+            main{
+                width: 380px;
+                height: 450px;
+            }
+            main>h3{
+                left: 30px;
+                font-size: 24px;
+            }
+            main>#div>div{
+                width: 300px;
+                height: 60px;
+                font-size: 12px;
+            }
+            footer>small{
+                font-size: 12px;
+            }
+        }
+        @media all and (max-width: 375px){
+            main{
+                width: 320px;
+            }
+            main>#div>div{
+                width: 250px;
+                height: 50px;
+                font-size: 11px;
+            }
+            #div>div>a>img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        @media all and (max-width: 320px){
+            main{
+                width: 280px;
+            }
+            main>#div>div{
+                width: 200px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -108,43 +202,23 @@
     <div id="div">
         <div id="card1">
             <h2>Case 01</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-01"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-01/case-1.html"><img src="assets/icons/play.png" alt=""></a>
+            <a href="https://github.com/nawodahansani/Js-Assignment/tree/master/case-1"><img src="../icons/github1.png" alt=""></a>
+            <a href="../assignment/assignment3/case-1/case1.html"><img src="../icons/play.png" alt=""></a>
         </div>
         <div id="card2">
             <h2>Case 02</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-02"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-02/case-2.html"><img src="assets/icons/play.png" alt=""></a>
+            <a href="https://github.com/nawodahansani/Js-Assignment/tree/master/case-2"><img src="../icons/github1.png" alt=""></a>
+            <a href="../assignment/assignment3/case-2/case2.html"><img src="../icons/play.png" alt=""></a>
         </div>
-        <div id="card3">
-            <h2>Case 03</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-03"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-03/case-3.css"><img src="assets/icons/play.png" alt=""></a>
-        </div>
-        <div id="card4">
-            <h2>Case 04</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-04"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-04/case-4.html"><img src="assets/icons/play.png" alt=""></a>
-        </div>
-        <div id="card5">
-            <h2>Case 05</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-05"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-05/case-5.html"><img src="assets/icons/play.png" alt=""></a>
-        </div>
-        <div id="card6">
-            <h2>Case 06</h2>
-            <p></p>
-            <a href="https://github.com/nawodahansani/Css-Positioning/tree/4650ea3789e0f96abc7107e069bfebba7ee47a90/case-06"><img src="assets/icons/github1.png" alt=""></a>
-            <a href="assets/assignment/assignment1/case-06/case-6.html"><img src="assets/icons/play.png" alt=""></a>
-        </div>
+
     </div>
     <div id="circle1"></div>
     <div id="circle2"></div>
 </main>
+
+<footer>
+    <hr>
+    <small>Create & Design By Nawoda Hansani</small>
+</footer>
 </body>
 </html>

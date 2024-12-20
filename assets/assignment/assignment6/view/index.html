@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background: rgba(179, 248, 179, 0.73) !important;
+
+        }
+        /*.navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }*/
+        .navbar-nav .nav-link {
+            font-size: 18px;
+            font-weight: bold;
+            color: darkgreen;
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-link:hover{
+            color:white ;
+            cursor: pointer;
+        }
+        .navbar-brand img {
+            height: 60px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigate_bar" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../assest/img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-home" >Home</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-customer" >Customer</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-store">Item</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-order">Order</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" id="nav-orderdetail">Order Detail</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--DASHBOARD-->
+<div  id="dashboard" class="container mt-5" >
+    <h1 class="text-center mb-4" style="color: darkgreen; font-weight: bold; margin: 5vw">Welcome to POS System</h1>
+    <div class="row" style="margin: 5vw 0vw">
+        <div class="col-md-3 ">
+            <div class="card text-white mb-3" style="background-color: deepskyblue">
+                <div class="card-body" >
+                    <h5 class="card-title">Customers</h5>
+                    <p class="card-text fs-2" id="customerCount">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white mb-3" style="background-color: mediumspringgreen">
+                <div class="card-body" >
+                    <h5 class="card-title">Items</h5>
+                    <p class="card-text fs-2" id="itemCount">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3" >
+            <div class="card text-white mb-3" style="background-color: yellow">
+                <div class="card-body" >
+                    <h5 class="card-title">Orders</h5>
+                    <p class="card-text fs-2" id="orderCount">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white mb-3" style="background-color: crimson">
+                <div class="card-body" >
+                    <h5 class="card-title">Total Revenue</h5>
+                    <p class="card-text fs-2" id="totalRevenue">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CUSTOMER-->
+<div id="customer" class="container mt-5">
+    <!-- Customer Form Title -->
+    <h2 class="text-center mb-4">Customer Form</h2>
+
+    <!-- Customer Form -->
+    <form style="background-color: palegreen;padding: 40px; border-radius: 10px;">
+        <div class="row mb-3">
+            <div class="col">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="col">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                <input type="tel" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number" required>
+            </div>
+            <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea class="form-control" id="address" placeholder="Enter Address" required></textarea>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="d-flex justify-content-center">
+            <button id="add_customer" type="button" class="btn btn-primary me-2" style="width: 150px;">Save</button>
+            <button id="update_customer" type="button" class="btn btn-success me-2" style="width: 150px;">Update</button>
+            <button id="delete_customer" type="button" class="btn btn-danger" style="width: 150px;">Delete</button>
+            <button id="clear_customer" type="button" class="btn btn-warning" style="width: 150px; color: white;margin-left: 8px">Clear</button>
+        </div>
+    </form>
+
+    <!-- Customer Details Table -->
+    <div class="mt-5" style="background-color: palegreen;padding: 40px; border-radius: 10px;margin-bottom: 20px">
+        <h3>Customer Detail</h3>
+        <table class="table table-bordered">
+            <thead class="table-light">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Mobile Number</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+            </thead>
+            <tbody id="customer_table" style="background-color: white">
+            <!-- Customer records go here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--ITEM-->
+<div id="item" class="container mt-5">
+    <!-- Item Form Title -->
+    <h2 class="text-center mb-4">Item Form</h2>
+
+    <!-- Item Form -->
+    <form style="background-color: palegreen;padding: 40px; border-radius: 10px;">
+        <div class="row mb-3">
+            <div class="col">
+                <label for="itemName" class="form-label">Item Name</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Enter Item Name">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="qty" class="form-label">Qty</label>
+                <input type="number" class="form-control" id="qty" placeholder="Enter Quantity">
+            </div>
+            <div class="col">
+                <label for="unitPrice" class="form-label">Unit Price</label>
+                <input type="number" class="form-control" id="unitPrice" placeholder="Enter Unit Price">
+            </div>
+        </div>
+
+        <!-- Action Buttons with d-flex justify-content-end -->
+        <div class="d-flex justify-content-center">
+            <button id="save_item" type="button" class="btn btn-primary me-2" style="width: 150px;">Save</button>
+            <button id="update_item" type="button" class="btn btn-success me-2" style="width: 150px;">Update</button>
+            <button id="delete_item" type="button" class="btn btn-danger" style="width: 150px;">Delete</button>
+            <button id="clear_item" type="button" class="btn btn-warning" style="width: 150px; color: white;margin-left: 8px">Clear</button>
+        </div>
+    </form>
+
+    <!-- Item Details Table -->
+    <div class="mt-5" style="background-color: palegreen;padding: 40px; border-radius: 10px;margin-bottom: 20px">
+        <h3>Item Detail</h3>
+        <table class="table table-bordered">
+            <thead class="table-light">
+            <tr>
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+            </tr>
+            </thead>
+            <tbody id="item_table" style="background-color: white">
+            <!-- Item records go here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--ORDER-->
+<div id="order" class="container mt-5">
+    <h2 class="text-center mb-4">Place Order</h2>
+
+    <!-- Horizontal Layout for Forms -->
+    <div class="row">
+        <!-- Customer and Item Details Form Section -->
+        <div class="col-md-8">
+            <div class="form-container" style="background-color: palegreen;padding: 40px; border-radius: 10px;">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="orderid" class="form-label">Order Id</label>
+                            <input type="text" class="form-control" id="orderid" readonly>
+                        </div>
+                        <div class="col">
+                            <label for="date" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="date" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="customerMobileSelect">Select Mobile Number</label>
+                            <select class="form-select" id="customerMobileSelect" required>
+                                <option selected disabled value="">Choose Mobile Number</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Customer Name" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="itemNameSelect">Select Item Name</label>
+                            <select class="form-select" id="itemNameSelect" required>
+                                <option selected disabled value="">Choose Item Name</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="unitPrice">Unit Price</label>
+                            <input type="number" class="form-control" id="unitPrice1" placeholder="Unit Price" readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="qtyOnHand">Qty On Hand</label>
+                            <input type="number" class="form-control" id="qtyOnHand" placeholder="Qty On Hand" readonly>
+                        </div>
+                        <div class="col">
+                            <label for="orderQty">Order Qty</label>
+                            <input type="number" class="form-control" id="orderQty" placeholder="Enter Qty" required>
+                        </div>
+                    </div>
+                    <button id="addToCart" type="button" class="btn btn-add-cart" style="background-color: #007bff;color: white;width: 100%;margin-top: 20px;">+ Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Order Summary Section -->
+        <div class="col-md-4">
+            <div class="form-container" style="background-color: palegreen;padding: 40px; border-radius: 10px;">
+                <form>
+                    <div class="form-group">
+                        <label for="total">Total Rs.</label>
+                        <input type="number" class="form-control" id="total" placeholder="0.00" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="discount">Discount (%)</label>
+                        <input type="number" class="form-control" id="discount" placeholder="Discount">
+                    </div>
+                    <div class="form-group">
+                        <label for="subTotal">Sub Total Rs.</label>
+                        <input type="number" class="form-control" id="subTotal" placeholder="0.00" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="cash">Cash</label>
+                        <input type="number" class="form-control" id="cash" placeholder="Cash">
+                    </div>
+                    <div class="form-group">
+                        <label for="balance">Balance</label>
+                        <input type="number" class="form-control" id="balance" placeholder="Balance" readonly>
+                    </div>
+                    <button type="button" class="btn btn-place-order" id="placeOrderBtn" style="background-color: #dc3545;color: white;width: 100%;margin-top: 20px;">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Cart Table -->
+    <div class="table-container mt-4" style="background-color: palegreen;padding: 40px; border-radius: 10px;margin-bottom: 20px">
+        <h3>Order Cart</h3>
+        <table class="table table-bordered" style="background-color: white">
+            <thead class="thead-light">
+            <tr>
+               <!-- <th>Item Code</th>-->
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="cart_table">
+            <!-- Sample row (you can remove this) -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!--ORDER DETAIL-->
+<div id="orderdetail" class="container mt-5" >
+    <!-- Order Detail Form Title -->
+    <h2 class="text-center mb-4">Order History</h2>
+
+    <!-- Order Detail Table -->
+    <div class="mt-5" style="background-color: palegreen;padding: 40px; border-radius: 10px;margin-bottom: 20px">
+    <h3>Order Detail</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped mt-3" style="background-color: white">
+            <thead>
+            <tr>
+                <th>Order Id</th>
+                <th>Customer Name</th>
+                <th>Date</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="orderdetail_table">
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+<!--JS-QUERY-->
+<script src="../lib/jquery-3.7.1.min.js"></script>
+<!--SWEETALERT2-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!--PAGE DISPLAYING ORDER-->
+<script>
+    document.getElementById("customer").style.display = "none";
+    document.getElementById("item").style.display = "none";
+    document.getElementById("order").style.display = "none";
+    document.getElementById("orderdetail").style.display = "none";
+
+
+    document.getElementById("nav-home").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "block";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+        document.getElementById("orderdetail").style.display = "none";
+    });
+
+    document.getElementById("nav-customer").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "block";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+        document.getElementById("orderdetail").style.display = "none";
+    });
+
+    document.getElementById("nav-store").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "block";
+        document.getElementById("order").style.display = "none";
+        document.getElementById("orderdetail").style.display = "none";
+    });
+
+    document.getElementById("nav-order").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "block";
+        document.getElementById("orderdetail").style.display = "none";
+    });
+    document.getElementById("nav-orderdetail").addEventListener("click",function (){
+        document.getElementById("dashboard").style.display = "none";
+        document.getElementById("customer").style.display = "none";
+        document.getElementById("item").style.display = "none";
+        document.getElementById("order").style.display = "none";
+        document.getElementById("orderdetail").style.display = "block";
+    });
+</script>
+<script type="module">
+    import {customer_array,item_array,order_array} from "../db/database.js";
+    import {totalRevenue} from "../controller/OrderController.js";
+
+    $(document).ready(function (){
+        $('#customerCount').text(customer_array.length);
+        $('#itemCount').text(item_array.length);
+        $('#orderCount').text(order_array.length);
+        $('#totalRevenue').text(`Rs. ${totalRevenue()}`);
+    });
+</script>
+
+<script type="module" src="../controller/CustomerController.js"></script>
+<script type="module" src="../controller/ItemController.js"></script>
+<script type="module" src="../controller/OrderController.js"></script>
+<!--BOOTSTRAP-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
