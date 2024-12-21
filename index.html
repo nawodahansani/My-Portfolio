@@ -42,22 +42,32 @@
 <body>
 <!--Header Section-->
 <header>
-    <div>
+    <!--<div>
         <img data-aos="fade-down"
              data-aos-easing="linear"
              data-aos-duration="1000"
              src="assets/images/logo.png" alt="logo">
-    </div>
+    </div>-->
     <nav>
-        <ul data-aos="fade-down"
+         <!--data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1500">
-
+            data-aos-duration="1500"-->
+        <ul class="sidebar">
+            <li onclick= hideSidebar() ><a href="#"><img src="assets/icons/cross.png"></a></li>
             <li><a href="#main1">Home</a></li>
             <li><a href="#main2">About</a></li>
             <li><a href="#main3">Skills</a></li>
             <li><a href="#main4">Projects</a></li>
             <li><a href="#main5">Contact</a></li>
+        </ul>
+        <ul>
+            <li><img src="assets/images/logo.png" style="width: 70px;height: 50px;position:absolute;left: 10px"></li>
+            <li class="hideOnMobile"><a href="#main1">Home</a></li>
+            <li class="hideOnMobile"><a href="#main2">About</a></li>
+            <li class="hideOnMobile"><a href="#main3">Skills</a></li>
+            <li class="hideOnMobile"><a href="#main4">Projects</a></li>
+            <li class="hideOnMobile"><a href="#main5">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar() ><a href="#"><img src="assets/icons/category.png"></a></li>
         </ul>
     </nav>
 </header>
@@ -347,6 +357,15 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script src="assets/javascript/script.js"></script>
-
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'
+    }
+</script>
 </body>
 </html>

@@ -7,31 +7,14 @@ header{
     top: 0;
     z-index: 1;
 }
-/* NH-icon */
 
-/*header>div>h3{
-    color: white;
-    font-family: "Lemon", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    height: fit-content;
-    line-height: 52px;
-
-    position: absolute;
-    top: 0;
-    margin: 0px;
-    padding-left: 20px;
-}*/
-
-header>div>img{
+/*header>div>img{
     width: 70px;
     height: 50px;
     position: absolute;
     left: 20px;
-}
-/* Navigation */
-header>nav{
+}*/
+/*header>nav{
     height: fit-content;
     position: absolute;
     right: 15px;
@@ -40,6 +23,7 @@ header>nav{
     margin: auto;
 }
 header>nav>ul{
+    width: 100%;
     list-style: none;
 }
 header>nav>ul>li{
@@ -55,9 +39,74 @@ header>nav>ul>li{
     color: white;
 }
 header>nav>ul>li>a{
-    text-decoration: none; /* Removes the default underline */
-    color: inherit; /* Inherits the color from the parent li */
-    font-weight: normal; /* Set font-weight to normal if needed */
+    text-decoration: none; !* Removes the default underline *!
+    color: inherit; !* Inherits the color from the parent li *!
+    font-weight: normal; !* Set font-weight to normal if needed *!
+}*/
+
+/* Navigation */
+header>nav{
+    background-color: black;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+header>nav>ul{
+    width: 100%;
+    top: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+}
+header>nav>ul>li{
+    height: 50px;
+}
+header>nav>ul>li>a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+}
+header>nav>ul>li>a:hover{
+    background: linear-gradient(90deg, #00C2FF 0%, #FF29C3 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*header>nav>ul>li:first-child{
+    margin-right: auto;
+}*/
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
 }
 
 /*------------All Main Sections----------------*/
@@ -1014,9 +1063,9 @@ footer>small{
 }
 
 @media all and (max-width: 1024px) {
-    header{
+    /*header{
         width: 1000px;
-    }
+    }*/
     main{
         width: 950px;
     }
@@ -1050,9 +1099,9 @@ footer>small{
 }
 
 @media all and (max-width: 768px) {
-    header{
+    /*header{
         width: 750px;
-    }
+    }*/
     main{
         width: 700px;
     }
@@ -1184,9 +1233,15 @@ footer>small{
 }
 
 @media all and (max-width: 425px) {
-    header{
-        width: 405px;
+    .hideOnMobile{
+        display:none ;
     }
+    .menu-button{
+        display: block;
+    }
+    /*header{
+        width: 405px;
+    }*/
     main{
         width: 400px;
     }
@@ -1324,9 +1379,15 @@ footer>small{
 }
 
 @media all and (max-width: 375px) {
-    header{
-        width: 355px;
+    .hideOnMobile{
+        display:none ;
     }
+    .menu-button{
+        display: block;
+    }
+    /*header{
+        width: 355px;
+    }*/
     main{
         width: 350px;
     }
@@ -1388,9 +1449,15 @@ footer>small{
 }
 
 @media all and (max-width: 320px) {
-    header{
-        width: 300px;
+    .hideOnMobile{
+        display:none ;
     }
+    .menu-button{
+        display: block;
+    }
+    /*header{
+        width: 300px;
+    }*/
     main{
         width: 300px;
     }
